@@ -1,0 +1,655 @@
+@charset "utf-8";
+/* CSS Document 
+Project Name: AstlyDost Template    
+Version:  1.0 
+Created Date: Dec 29, 2020
+Primary use: Apps Landing Webpage.
+Author Name: Md Arif (https://happyarif.com)
+*/
+
+/* 
+---///---///--- TABLE OF CONTENT ---///---///---
+
+01. Imported Fonts
+02. General CSS 
+        * Common CSS
+03. Header CSS 
+04. Service CSS
+05. Footer Topbar CSS 
+05. Main Footer CSS
+06. About CSS
+07. FAq CSS
+08. Terms of Service
+
+
+*/
+
+/*---///---///---///---///---///---///---///---///---///---
+    01. Imported Fonts
+---///---///---///---///---///---///---///---///---///---*/
+
+/* Google Fonts */
+
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap');
+
+/*---///---///---///---///---///---///---///---///---///---
+    02. General CSS 
+---///---///---///---///---///---///---///---///---///---*/
+
+body {
+        font-family: 'Manrope', sans-serif;
+        background: #ffffff;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 26px;
+        color: #424242;
+        overflow-x: hidden;
+    }
+    /* Common CSS */
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        font-family: 'Manrope', sans-serif;
+        color: #1d1d1d;
+        line-height: 1.1;
+        font-weight: 600;
+        margin-top: 0;
+        margin-bottom: 10px;
+        padding: 0;
+        /* text-transform: capitalize; */
+    }
+    p {
+        margin: 0;
+        padding: 0;
+        letter-spacing: 0.5px;
+    }
+    a {
+        text-decoration: none;
+        font-weight: 800px;
+        -webkit-transition: all 0.3s ease-in-out;
+        -moz-transition: all 0.3s ease-in-out;
+        -o-transition: all 0.3s ease-in-out;
+        -ms-transition: all 0.3s ease-in-out;
+        transition: all 0.3s ease-in-out;
+    }
+    a:focus,
+    a:hover {
+        text-decoration: none;
+        -webkit-transition: all 0.3s ease-in-out;
+        -moz-transition: all 0.3s ease-in-out;
+        -o-transition: all 0.3s ease-in-out;
+        -ms-transition: all 0.3s ease-in-out;
+        transition: all 0.3s ease-in-out;
+    }
+    ul {
+        margin: 0;
+        padding: 0;
+    }
+    ul li {
+        list-style-type: none;
+        margin: 0;
+        padding: 0px 10px;
+    }
+    ul li a.nav-link{
+        color: #18191F !important;
+        font-weight: 600;
+    }
+    img {
+        width: 100%;
+        max-width: 100%;
+        height: auto;
+    }
+
+    .website_logo{
+        width: 150px;
+    }
+    
+/*---///---///---///---///---///---///---///---///---///---
+    02. Header CSS 
+---///---///---///---///---///---///---///---///---///---*/
+    .navbar{
+        z-index: 1;
+     }
+     .background_img{
+        background-image: url(../images/bg/BG@3x.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: relative;
+        height: 715px;
+        overflow: hidden;
+    }
+    .background_img:before{
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 0;
+    }
+
+    .background_img:after {
+        content: "";
+        position: absolute;
+        bottom: -100px;
+        left: -9%;
+        width: 120%;
+        height: 233px;
+        background: #ffffff;
+        -webkit-transform: rotate(-3deg);
+        -ms-transform: rotate(-3deg);
+        transform: rotate(-7deg);
+    }
+
+    /* Header banner section */
+    .head_title img{
+        width: 120px;
+    }
+    .head_title h2 {
+        font-size: 45px;
+        font-weight: 900;
+        line-height: 55px;
+        margin-bottom: 30px;
+    }
+    .head_title h5 {
+        font-size: 18px;
+        line-height: 25px;
+        font-weight: 700;
+    }
+
+  
+    img.img-fluid.myappleimg {
+        width: 250px;
+    }
+    .mobile-app {
+        z-index: 99;
+        position: relative;
+        top: 30px;
+    }
+    .sideimg {
+        position: absolute;
+        top: -6px;
+        z-index: 9999;
+        bottom: 0px;
+        display: table;
+        left: -52px;
+    }
+    .sideimg img {
+        width: 370px;
+    }
+
+    .sideimg2 {
+        position: absolute;
+        z-index: 22;
+        bottom: 0px;
+        display: inline;
+        right: -135px;
+    }
+    .sideimg2 img {
+        width: 750px;
+        position: relative;
+        top: -25px;
+    }
+    
+/*---///---///---///---///---///---///---///---///---///---
+    03. Service Section 
+---///---///---///---///---///---///---///---///---///---*/
+    .servicesection{
+        display: block;
+        overflow: hidden;
+        margin: 50px 0px;;        
+    }
+    .singlserivce{
+        margin: 10px 0px;
+    }
+    .serviceimag img{
+        width: 550px;
+    }
+    .serivceimage{
+        padding: 0px;
+    }
+    .serivcetext{
+        padding-left: 11.20%;
+        padding-right: 7%;
+    }
+    .serivcetext h3 {
+        font-size: 40px;
+        font-weight: 800;
+        line-height: 55px;
+    }
+    .serivcetext p {
+        font-size: 16px;
+        font-weight: 500;
+    }
+    .serivcetext a {
+        color: #00AEEF;
+        font-size: 16px;
+        font-weight: 500;
+    }
+    
+
+/*---///---///---///---///---///---///---///---///---///---
+    04. Footer Topbar CSS 
+---///---///---///---///---///---///---///---///---///---*/
+    .top_footer_content h2{
+        font-size: 35px;
+        font-weight: 800;
+        line-height: 50px;
+    }
+    .top_footer_content p{
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 25px;
+    }
+    .top_footer_content h5{
+        font-size: 18px;
+        font-weight: 600;
+    }
+
+    .top_footer {
+        background: #C9EEFB;
+        display: block;
+        z-index: 1;
+        margin-top: 150px;
+    }
+    .foottopapps img{
+        width: 120px;
+    }
+    .footermobilimage img {
+        width: 215px;
+    }
+
+/*---///---///---///---///---///---///---///---///---///---
+    05. Main Footer CSS 
+---///---///---///---///---///---///---///---///---///---*/
+    .footerpart{
+        display: block;
+        overflow: hidden;
+        margin: 40px;
+    }
+    .footerbody{
+        border-bottom: 1px solid #00AEEF;
+    }
+    .footerlogo img{
+        width: 150px;
+    }
+    .footernavbar ul {
+        display: block;
+    }
+    
+    .footernavbar ul li {
+        list-style: none;
+        display: inline;
+    }
+    
+    .footernavbar ul li a {
+        color: black;
+        font-size: 14px;
+        font-weight: bold;
+    }
+    .footernavbar ul li a:hover {
+        color: #00AEEF;
+        font-size: 14px;
+        font-weight: bold;
+    }
+    .socialmedia ul {
+        text-decoration: none;
+        display: block;
+    }
+    
+    .socialmedia ul li {
+        list-style: none;
+        display: inline-block;
+    }
+    
+    .socialmedia ul li img {
+        width: 28px;
+    }
+    .footerbody {
+        border-bottom: 1px solid #00AEEF;
+        width: 99%;
+    }
+    .footermenu ul li {
+        text-align: right;
+        display: inline-block;
+    }
+    .footermenu ul li a{
+        text-align: right;
+        color: #18191F;
+    }
+    .footermenu ul li a:hover{
+        color: #00AEEF;
+    }
+    img.img-fluid.mr-2.footerphone1 {
+        position: absolute;
+        top: -100px;
+        display: block;
+        right: 240px;
+    }
+    img.img-fluid.footerphone2 {
+        position: relative;
+        left: 320px;
+        bottom: -25px;
+        display: block;
+    }
+/*---///---///---///---///---///---///---///---///---///---
+    05. About us CSS 
+---///---///---///---///---///---///---///---///---///---*/
+    .about_img{
+        background-image: linear-gradient(#ffffff7a, #ffff0000), url(../images/bg/aboutBG.png); background-repeat: no-repeat;
+        background-size: cover;
+        position: relative;
+        height: 515px;
+        overflow: hidden;
+    }
+    .our_story h2{
+        font-size: 40px;
+        font-weight: 900;
+    }
+
+    section.our_teams {
+        display: block;
+        background: #C9EEFC;
+        padding: 100px 0px;
+    }
+    .col-md-12.our_teams_box h2 {
+        text-align: center;
+        font-size: 35px;
+        font-weight: 900;
+        padding: 40px 0px;
+    }
+    .teambox {
+        background: white;
+        padding: 50px;
+        overflow: hidden;
+        width: 400px;
+        margin-bottom: 115px;
+    }
+    .teambox p {
+        font-size: 14px;
+        line-height: 30px;
+        font-weight: 600;
+    }
+    .teamboxdetail {
+        text-align: right;
+        font-size: 16px;
+    }
+    .teambox img {
+        position: absolute;
+        width: 120px;
+        left: 0;
+    }
+    .leftshape img {
+        width: 400px;
+        position: absolute;
+        left: -75px;
+    }
+    
+    .leftshape {
+        display: flex;
+        position: relative;
+        left: -150px;
+        bottom: 0px;
+        top: -60px;
+    }
+
+    .rightshape img {
+        width: 400px;
+        position: absolute;
+        right: -250px;
+    }
+    
+    .rightshape {
+        display: flex;
+        position: relative;
+        left: 0px;
+        bottom: 0px;
+        top: -65px;
+    }
+/*---///---///---///---///---///---///---///---///---///---
+    06. Service CSS 
+---///---///---///---///---///---///---///---///---///---*/
+    .service_us{
+        background-image: linear-gradient(#ffffff7a, #ffff0000), url(../images/bg/ser.png); background-repeat: no-repeat;
+        background-size: cover;
+        position: relative;
+        height: 515px;
+        overflow: hidden;
+    }
+    section.service_body {
+        background: #C9EEFC;
+        padding: 100px 0px;
+    }
+
+    .ourserivce h2{
+        font-size: 40px;
+        font-weight: 900;
+    }
+
+    .serviceleft h2 {
+        font-size: 40px;
+        font-weight: 800;
+        line-height: 45px;
+    }
+    .servicebox {
+        background: black;
+        color: white;
+        padding: 50px;
+    }
+    .servicebox p {
+        font-size: 12px;
+        padding: 0px 20px;
+    }
+    .servicebox h5 {
+        color: white;
+        padding: 0px 20px;
+        font-size: 16px;
+    }
+    .servicebox2{
+        background: #00AEEF;
+        color: white;
+        padding: 40px; 
+    }
+    .servicebox2 p {
+        font-size: 12px;
+        padding: 0px 20px;
+    }
+    .servicebox2 h5 {
+        color: white;
+        padding: 0px 20px;
+        font-size: 16px;
+    }
+    
+    .servicebox3{
+        background: #495964;
+        color: white;
+        padding: 40px; 
+    }
+    .servicebox3 p {
+        font-size: 12px;
+        padding: 0px 20px;
+    }
+    .servicebox3 h5 {
+        color: white;
+        padding: 0px 20px;
+        font-size: 16px;
+    }
+
+    .stepbox1 {
+        background: #0FB3F1;
+        padding: 90px;
+        margin: 130px 0px;
+        color: white;
+        border-radius: 15px;
+    }
+    .stepbox1 img {
+        position: absolute;
+        top: 0;
+        bottom: 0px;
+        display: block;
+    }
+    .stepbox1 h3 {
+        color: white;
+    }
+    .stepbox1 img {
+        position: absolute;
+        top: -150%;
+        bottom: 0px;
+        display: block;
+    }
+
+    .stepbox2 {
+        background:black;
+        padding: 90px;
+        margin: 130px 0px;
+        color: white;
+        border-radius: 15px;
+    }
+    .stepbox2 img {
+        position: absolute;
+        top: 0;
+        bottom: 0px;
+        display: block;
+    }
+    .stepbox2 h3 {
+        color: white;
+       
+    }
+    .stepbox2 p {
+        color: white;
+       
+    }
+    .stepbox2 img {
+        position: absolute;
+        top: -115%;
+        bottom: 0px;
+        display: block;
+    }
+/*---///---///---///---///---///---///---///---///---///---
+    07. Faqs CSS 
+---///---///---///---///---///---///---///---///---///---*/
+    .faqs{
+        background-image: linear-gradient(#ffffff7a, #ffff0000), url(../images/bg/Faq.png); background-repeat: no-repeat;
+        background-size: cover;
+        position: relative;
+        height: 515px;
+        overflow: hidden;
+    }
+    .input-group {
+        box-shadow: 0px 0px 10px #ababab;
+    }
+    i.fa.fa-search {
+        width: 35px;
+    }
+
+    .tab {
+        float: left;
+        background-color: #00AEEF;
+        width: 30%;
+        height: 300px;
+      }
+      
+      /* Style the buttons that are used to open the tab content */
+      .tab button {
+        display: block;
+        background-color: inherit;
+        color: #f7f7f7;
+        padding: 22px 16px;
+        width: 100%;
+        border: none;
+        outline: none;
+        text-align: left;
+        cursor: pointer;
+        transition: 0.3s;
+      }
+      
+      /* Change background color of buttons on hover */
+      .tab button:hover {
+        background-color: white;
+        color: black;
+      }
+      
+      /* Create an active/current "tab button" class */
+      .tab button.active {
+        background-color: white;
+        color: black;
+      }
+      
+      /* Style the tab content */
+      .tabcontent {
+        float: left;
+        padding: 0px 45px;
+        width: 70%;
+        border-left: none;
+        height: 300px;
+      }
+      div#Tokyo {
+        display: none;
+    }
+    div#London {
+        display: none;
+    }
+    .faqquestion {
+        margin: 50px 0px;
+        display: block;
+        overflow: hidden;
+        height: 380px;
+    }
+    .tab h4 {
+        color: white;
+        text-align: center;
+        padding: 40px 0px;
+    }
+    section.contact {
+        margin: 80px 0px;
+    }
+
+
+    section.contacf-form {
+        background: #8CD6F4;
+        padding: 50px 0px;
+    }
+
+    /*---///---///---///---///---///---///---///---///---///---
+    07. Terms of Service 
+---///---///---///---///---///---///---///---///---///---*/
+    header.termsofservice {
+        display: block;
+        overflow: hidden;
+        height: 250px;
+        background: #C9EEFC;
+    }
+    section.termsofservice {
+        display: grid;
+        overflow: hidden;
+        margin-top: 35px;
+
+    }
+    section.termsofservice h2{
+        font-size: 40px;
+        font-weight: 900;
+    }
+    .card-header.terms_nav_active {
+    background: #C9EEFC;
+    outline: none;
+    border: 2px solid #C9EEFC;
+    }
+
+    .terms1 ul li:hover{
+        background: #C9EEFC;
+        transition: .5s;
+        cursor: pointer;
+    }
+
+    /*---///---///---///---///---///---///---///---///---///---
+    08. Privacy Policy
+---///---///---///---///---///---///---///---///---///---*/
+    header.privacy_policy {
+        display: block;
+        overflow: hidden;
+        height: 250px;
+        background: #C9EEFC;
+    }
